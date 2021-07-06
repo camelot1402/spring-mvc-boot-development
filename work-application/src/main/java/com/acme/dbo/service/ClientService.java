@@ -1,9 +1,9 @@
-package java.com.acme.dbo.service;
+package com.acme.dbo.service;
 
 import org.springframework.stereotype.Service;
 
-import java.com.acme.dbo.dao.ClientRepository;
-import java.com.acme.dbo.domain.Client;
+import com.acme.dbo.dao.ClientRepository;
+import com.acme.dbo.domain.Client;
 import java.util.Collection;
 
 @Service

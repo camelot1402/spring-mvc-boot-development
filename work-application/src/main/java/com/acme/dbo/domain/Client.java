@@ -1,4 +1,4 @@
-package java.com.acme.dbo.domain;
+package com.acme.dbo.domain;
 
 public class Client {
     private int id;

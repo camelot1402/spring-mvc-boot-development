@@ -1,15 +1,15 @@
-package java.com.acme.dbo.controller;
+package com.acme.dbo.controller;
 
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.bind.annotation.RequestBody;
+//import org.springframework.web.bind.annotation.RequestMapping;
+//import org.springframework.web.bind.annotation.RestController;
 
-import java.com.acme.dbo.domain.Client;
-import java.com.acme.dbo.service.ClientService;
+import com.acme.dbo.domain.Client;
+import com.acme.dbo.service.ClientService;
 import java.util.Collection;
 
-@RestController
-@RequestMapping("/api/client")
+//@RestController
+//@RequestMapping("/api/client")
 public class ClientController {
 
     private ClientService clientService;
@@ -18,11 +18,11 @@ public class ClientController {
         this.clientService = clientService;
     }
 
-    public void create(@RequestBody String name) {
+    public void create(String name) {
         clientService.create(name);
     }
 
-    public Client getById(@RequestBody int id) {
+    public Client getById(int id) {
         return clientService.findById(id);
     }
 

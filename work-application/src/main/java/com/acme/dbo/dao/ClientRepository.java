@@ -1,6 +1,6 @@
-package java.com.acme.dbo.dao;
+package com.acme.dbo.dao;
 
-import java.com.acme.dbo.domain.Client;
+import com.acme.dbo.domain.Client;
 import java.util.Collection;
 
 public interface ClientRepository {
